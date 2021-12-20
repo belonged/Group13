@@ -1,0 +1,328 @@
+<html>
+<head>
+<title>Nike.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a202843585.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+body{
+	background-size: cover;
+}
+.drpdwn{
+	margin: 0 auto;
+}
+nav{
+	height: 60px;
+	background: #000;
+	font-family: 'Oswald', sans-serif;
+}
+nav ul{
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 30px; 
+}
+nav ul li{
+	background: orange;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	z-index: 1;
+}
+nav ul li a{
+	display: block;
+	padding: 0 15px;
+	color: white;
+	text-decoration: none; 
+	line-height: 60px;
+	font-size: 20px;
+}
+nav ul li a:hover {
+	background: #243342;
+}
+nav ul ul{
+	position: absolute; 
+	top: 60px;
+	display: none;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+#logo{
+	position: absolute;
+	left: 500px;
+	top: 80px;
+}
+nav ul ul li{
+	width: 103px;
+	float: none; 
+	display: list-item;
+	position: relative; 
+}
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	display: block;
+	align-items: center;
+}
+.slide-container{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	align-items: center;	
+	overflow: hidden;
+}
+h1{
+	display: inline-block;
+	position: relative;
+	margin-top: 50px;
+	margin-left: 550px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 45px;
+}
+.image-slider{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .7s;
+	margin: 0px;
+}
+.slide-div{
+	margin-top: -220px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:	0px 30px 0pxpx 30px;
+}
+img{
+	position: relative;
+	width: 340px;
+	height: 370px;
+	transition: .5s;
+	filter: saturate(10%);
+}
+.button{
+	position: absolute;
+	width: 340px;
+	height: 370px;
+	transition: .5s;	
+}
+.button:hover{
+	background: rgba(0,0,0,0.2);
+}
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1{
+	width:300px;
+	height: 500px; 
+	background-color: transparent;
+	filter: saturate(100%);
+}
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2{
+	width:380px;
+	height: 400px; 
+	background-color: transparent;
+	filter: saturate(100%);
+}
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3{
+	width:380px;
+	height: 500px; 
+	background-color: transparent;
+	filter: saturate(100%);
+}
+#slider-span1:target ~ .image-slider {left: 10%; }
+#slider-span2:target ~ .image-slider {left: 0%; }
+#slider-span3:target ~ .image-slider {left: -10%; }
+
+#slide-3 p,#slide-6 p{
+	margin-left: -20px; 
+}
+p{
+	color: black;
+	display: block;
+	margin-left: -65px;
+	margin-right: -20px;
+	height: 100px;
+	width: 120px;
+	font-family: 'Oswald', sans-serif;
+	z-index: 1;
+	font-size: 20px;
+}
+.icon:hover{
+	cursor: pointer;
+	color: orange;
+	font-size: 22px;
+	transition: 1s;
+}
+#Nike{
+	position: absolute;
+	bottom: -100%;
+}
+
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4{
+	width:320px;
+	height: 500px; 
+	background-color: transparent;
+	filter: saturate(100%);
+}
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5{
+	width:300px;
+	height: 400px; 
+	background-color: transparent;
+	filter: saturate(100%);
+}
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6{
+	width:340px;
+	height: 400px; 
+	background-color: transparent;
+	filter: saturate(100%);
+}
+#slider-span4:target ~ .image-slider {left: 10%;}
+#slider-span5:target ~ .image-slider {left: 0%;}
+#slider-span6:target ~ .image-slider {left: -10%;}
+.para h1{
+	position: absolute;
+	left: -540px;
+	color: orange;
+	margin-top: -5px;
+	font-family: 'Anton', sans-serif;	
+}
+.para1 h1{
+	position: absolute;
+	margin-left: 45%;
+	margin-top: 4.5%;
+	color: orange;
+	font-family: 'Lobster Two', cursive;
+}
+#slide-1 img{
+	width: 50%;
+}
+#slide-1 p{
+	margin-left: 10px;
+}
+#slide-2 p{
+	margin-left: -30px;
+}
+#slide-3 img{
+	transform: rotate(-180deg);
+}
+#img4{
+	width: 50%;
+	margin-left: 30px;
+	transform: rotate(-180deg);
+}
+#slide-4 p{
+	margin-left: 0px;
+}
+#img5{
+	width: 80%;
+	margin-left: 0px;
+	transform: rotate(-180deg);
+}
+#slide-5 p{
+	margin-left: -10px;
+}
+#img6 {
+	margin-left: 20px;
+}
+</style>
+<body>
+<div class="para">
+<h1>Cocs.</h1>
+</div>
+<div class="para1">
+<h1>Nike</h1>
+</div>
+<div class="drpdwn">
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Categories</a>
+					<ul>
+						<li><a href="shopnow.html">Havaianas</a></li>
+						<li><a href="Nike.html">Nike</a></li>
+						<li><a href="Adidas.html">Adidas</a></li>
+						<li><a href="#">Crocs</a></li>
+						<li><a href="#">Sketchers</a></li>
+					</ul>
+				</li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
+<div class="slider-container"> 	
+	<h1>For Men</h1>
+	<span class="slider-span" id="slider-span1"></span>
+	<span class="slider-span" id="slider-span2"></span>
+	<span class="slider-span" id="slider-span3"></span>
+
+		<div class="image-slider">
+			<div class="slide-div" id="slide-1">
+				<img src="nikesl1.png" class="img" id="img1">
+				<a href="#slider-span1" class="button" id="button-1"></a>
+				<p>Nike 1<br><span>P999</span><br><span class="icon"><i class="fas fa-shopping-cart"></i>Add to Cart</span></p> 
+			</div>
+			<div class="slide-div" id="slide-2">
+				<img src="nikesl2.jpg" class="img" id="img2">
+				<a href="#slider-span2" class="button" id="button-2"></a>
+				<p>Nike 2<br><span>P999</span><br><span class="icon"> <i class="fas fa-shopping-cart"></i>Add to Cart</span></p> 
+			</div>
+			<div class="slide-div" id="slide-3">
+				<img src="nikesl3.png" class="img" id="img3">
+				<a href="#slider-span3" class="button" id="button-3"></a>
+				<p>Nike 3<br><span>P999</span><br><span class="icon"> <i class="fas fa-shopping-cart"></i>Add to Cart</span></p> 
+			</div>
+			
+		</div>
+	
+	
+</div>
+<div id="Nike">
+	<div class="slider-container"> 
+	<h1>For Women</h1>
+	<span class="slider-span" id="slider-span4"></span>
+	<span class="slider-span" id="slider-span5"></span>
+	<span class="slider-span" id="slider-span6"></span>
+		<div class="image-slider">
+			<div class="slide-div" id="slide-4">
+				<img src="nikefsl1.jpg" class="img" id="img4">
+				<a href="#slider-span4" class="button" id="button-4"></a>
+				<p>Nike 1<br><span>P999</span><br><span class="icon"> <i class="fas fa-shopping-cart"></i>Add to Cart</span></p>
+			</div>
+			<div class="slide-div" id="slide-5">
+				<img src="nikefsl2.jpg" class="img" id="img5">
+				<a href="#slider-span5" class="button" id="button-5"></a>
+				<p>Nike 2<br><span>P999</span><br><span class="icon"> <i class="fas fa-shopping-cart"></i>Add to Cart</span></p>
+			</div>
+			<div class="slide-div" id="slide-6">
+				<img src="https://5.imimg.com/data5/NM/ET/MY-11928137/exclusive-ladies-slipper-500x500.jpg" class="img" id="img6">
+				<a href="#slider-span6" class="button" id="button-6"></a>
+				<p>Nike 3<br><span>P999</span><br><span class="icon"> <i class="fas fa-shopping-cart"></i>Add to Cart</span></p>
+			</div>
+			
+		</div>
+	
+	
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COCS.</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.drpdwn{
+	margin: 0 auto;
+}
+nav{
+	height: 60px;
+	background: #000;
+	font-family: 'Oswald', sans-serif;
+}
+nav ul{
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 30px; 
+}
+nav ul li{
+	background: orange;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	z-index: 1;
+}
+nav ul li a{
+	display: block;
+	padding: 0 15px;
+	color: white;
+	text-decoration: none; 
+	line-height: 60px;
+	font-size: 20px;
+}
+nav ul li a:hover {
+	background: #243342;
+}
+nav ul ul{
+	position: absolute; 
+	top: 60px;
+	display: none;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+#logo{
+	position: absolute;
+	left: 500px;
+	top: 80px;
+}
+nav ul ul li{
+	width: 103px;
+	float: none; 
+	display: list-item;
+	position: relative; 
+}
+#logo h1{
+	position: relative;
+	font-family: 'Anton', sans-serif;
+	font-size: 100px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	left: 0px;
+	top: -40px;
+	animation: logo 1.9s;
+	z-index:0
+}
+#logo img{
+	width: 280px;
+	position: absolute;
+	margin-left: -290px;
+	margin-top: 55px;
+}
+@keyframes logo {
+	0% {top: -450px;}
+	100% {left: 0px;}
+}
+.slgn {
+	position: relative;
+	margin-top: -50px;
+	margin-bottom: 0;
+	padding-top: 0;
+	opacity: 0;
+	font-size: 40px;
+	font-family: 'Lobster Two', cursive;
+	animation: slgn 3s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+.shop {
+	position: relative;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	animation: slgn 3s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 2px solid black;
+	display: inline-block;
+}
+.shop a{
+	text-decoration: none;
+	color: black;
+}
+.shop:hover{
+	transition: 1s;
+	background: orange;
+	cursor: pointer;
+	font-size: 22px;
+}
+@keyframes slgn{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.about{
+	position: absolute;
+	bottom: 0%;
+	color: black;
+	text-align: justify;
+}
+.about h2{
+	position: relative;
+	font-family: 'Anton', sans-serif;
+	margin-top: 10px;
+	margin-left: 500px;
+	font-size: 29px;
+}
+.about h3{
+	position: relative;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	margin-top: -20px;
+	margin-left: 10px; 
+	margin-right: 10px; 
+}
+</style>
+<body>
+<div class="drpdwn">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Categories</a>
+					<ul>
+						<li><a href="shopnow.html">Havaianas</a></li>
+						<li><a href="Nike.html">Nike</a></li>
+						<li><a href="Adidas.html">Adidas</a></li>
+						<li><a href="#">Crocs</a></li>
+						<li><a href="#">Sketchers</a></li>
+					</ul>
+				</li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
+<div id="logo">
+<img src="logo.jpg">
+<h1>COCS.</h1>
+<p class="slgn">"We COCStantly want you to move freely."</p>
+<p class="shop" ><a href="shopnow.html">Shop now</a></p>
+</div>
+
+<div class="about">
+	<h2>About the Company</h2>
+	<h3>	The brand name of the company comes from the word Coconut Slippers which in a shortened term, and the business representatives decided to name it, “Cocs."
+The company offers house slippers made out of coconut and doesn't just end there. Since the goal of the company is to contribute to the community, the business representatives decided to come up with an idea that the house slippers has to be eco-friendly and be sold to the industry as cheap as possible. Coconut Slippers made out obviously from coconut and to the potential buyers, they are allowed and suggested to provide their own coconut and let the company make the best house slippers they could ever have. Of course, they have to pay the company for labor regarding on making such item for the customers.
+This product enables homeowners or people inside their houses to walk anywhere in the house not only with bare feet. If the business flourishes and serve the community effectively and productively, the business representatives will brainstorm what other products that can also be a substitute of coconut.
+This product is for everyone.</h3>
+</div>
+</body>
+</html>

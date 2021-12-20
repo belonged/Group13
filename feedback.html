@@ -1,0 +1,343 @@
+<html>
+<head>
+<title>Feeedback.</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a202843585.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.drpdwn{
+	margin: 0 auto;
+	font-family: 'Oswald', sans-serif;
+}
+nav{
+	height: 60px;
+	background: #000;
+}
+nav ul{
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 30px; 
+}
+nav ul li{
+	background: orange;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+}
+nav ul li a{
+	display: block;
+	padding: 0 15px;
+	color: white;
+	text-decoration: none; 
+	line-height: 60px;
+	font-size: 20px;
+	z-index: 1;
+}
+nav ul li a:hover {
+	background: #243342;
+}
+nav ul ul{
+	position: absolute; 
+	top: 60px;
+	display: none;
+}
+nav ul li:hover > ul{
+	display: block; 	z-index: 1;
+}
+#logo{
+	position: absolute;
+	left: 500px;
+	top: 80px;
+}
+nav ul ul li{
+	width: 103px;
+	float: none; 
+	display: list-item;
+	position: relative; 
+}
+.para h1{
+	position: relative;
+	margin-top: 1px;
+	left: 490px;
+	font-family: 'Lobster Two', cursive;
+}
+.profiles{
+	position: absolute;
+	margin-top: -25px;
+	margin-left: 230px;
+	width: 80%;
+	height: 50%;
+	overflow: hidden;
+	z-index: 0;
+}
+.profiles p{
+	font-family: 'Lobster Two', cursive;
+	position: relative;	
+	font-size: 24px;	z-index: 0;
+}
+.img-1 img{
+	margin-top: -10px;
+	margin-left: 8px;
+	position: absolute;
+	width: 20%;
+	border-radius: 50%;
+	animation: para 1s;z-index: 0;
+}
+@keyframes para{
+	0%{margin-top: 1000px;}
+	100%{margin-top: -10px;}
+}
+.img-1 p{
+	position: relative;
+	font-size: 24px;
+	top: 500px;
+	font-family: 'Lobster Two', cursive;
+	animation: p1 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes p1{
+	0%{top: 500px;}
+	100%{top: 200px;}
+}
+.p2{
+	position: absolute;
+	margin-top: -30px;
+	margin-left: 60px;
+}
+.img-2 img{
+	margin-top: -10px;
+	margin-left: 300px;
+	position: absolute;
+	width: 20%;
+	border-radius: 50%;
+	animation: para1 1.5s;
+}
+@keyframes para1{
+	0%{margin-top: 1000px;}
+	100%{margin-top: -10px;}	
+}
+.p3{
+	position: absolute;
+	margin-top: -80px;
+	margin-left: 320px;
+	font-size: 24px;
+	top: 500px;	
+	animation: p2 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes p2{
+	0%{top: 500px;}
+	100%{top: 200px;}
+}
+.p4{
+	position: absolute;
+	margin-top: -30px;
+	margin-left: 350px;	
+	font-size: 24px;
+	top: 500px;
+	animation: p2 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;		
+}
+.img-3 img{
+	margin-top: -10px;
+	margin-left: 600px;
+	position: absolute;
+	width: 20%;
+	height: 60%;
+	border-radius: 50%;
+	animation: para2 2s;
+}
+@keyframes para2{
+	0%{margin-top: 1000px;}
+	100%{margin-top: -10px;}	
+}
+.p5{
+	position: absolute;
+	margin-top: -80px;
+	margin-left: 640px;	
+	font-size: 24px;
+	top: 500px;
+	animation: p3 1s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes p3{
+	0%{top: 500px;}
+	100%{top: 200px;}
+}
+.p6{
+	position: absolute;
+	margin-top: -30px;
+	margin-left: 665px;	
+	font-size: 24px;
+	top: 500px;	
+	animation: p3 1s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+.container{
+	position: absolute;
+	bottom: 4%;
+	left: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	display: inline-block;
+}
+.feedbackbox{
+	padding: 0px;
+	border-radius: 10px; 
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+}
+.feedbackbox h1{
+	font-family: 'Lobster Two', cursive;
+}
+.emoji{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	overflow:hidden;
+}
+.emoji img{
+	width: 80px;
+	margin: 0px 10px;
+}
+#emoji{
+	display: flex;
+	align-items: center;
+	transform: translateX(-400px);
+	transition: 0.3s; 
+}
+.rating .fas{
+	position: relative;
+	font-size: 40px;
+	color: #e4e4e4;
+	cursor: pointer;
+	padding-top: 0;
+	margin-top: -100px;
+}
+</style>
+<body>
+<div class="drpdwn">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Categories</a>
+					<ul>
+						<li><a href="shopnow.html">Havaianas</a></li>
+						<li><a href="Nike.html">Nike</a></li>
+						<li><a href="Adidas.html">Adidas</a></li>
+						<li><a href="#">Crocs</a></li>
+						<li><a href="#">Sketchers</a></li>
+					</ul>
+				</li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="para">
+		<h1>The Makers/Designers</h1>
+	</div>
+	<div class="profiles">
+		<div class="img-1">
+			<img src="https://scontent.fmnl14-1.fna.fbcdn.net/v/t1.6435-9/120948088_658234498173391_6675640081318096602_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=w2Zxln093LsAX-aS7jp&_nc_ht=scontent.fmnl14-1.fna&oh=00_AT-F_YXkNgY2yTh3N33Jhiq0-as9y2k_uHNV0YcihgdMFw&oe=61E2101E">
+			<p class="p1">Mario Marlon Tumamak</p>
+			<p class="p2">BSIT-1R4</p>
+		</div>
+		<div class="img-2">
+			<img src="https://scontent.fcgy2-1.fna.fbcdn.net/v/t39.30808-6/236608544_3720959051463034_5144216856359232110_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Dgjz-EK0dRAAX_TQjVp&_nc_ht=scontent.fcgy2-1.fna&oh=00_AT84s0K1II9XRkYjGDlJU67IbfmZ8HlnlMtgG4H7Q2uRYw&oe=61C2135D">
+			<p class="p3">Angelica Torrejos</p>
+			<p class="p4">BSIT-1R4</p>			
+		</div>
+		<div class="img-3">
+			<img src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t1.6435-9/106244613_1416851718499839_1597822981818125449_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=mBrnDNYzKUcAX90YLQf&_nc_ht=scontent.fcgy2-2.fna&oh=00_AT_pH82DCSqG3x42yzq5ChNEBv_ULyoiamePr5BAJa4zBA&oe=61E141E4">
+			<p class="p5">Jerald Timbang</p>
+			<p class="p6">BSIT-1R4</p>
+		</div>		
+	</div>
+<div class="container">
+	<div class="feedbackbox">
+	
+<h1>Rate our Website</h1>
+		<div class="emoji">
+			<div id="emoji">
+				<img src="2td.png">
+				<img src="1td.png">
+				<img src="smile.png">
+				<img src="1t.png">
+				<img src="2t.png">
+			</div>
+		</div>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+	</div>
+</div>
+<script>
+	var stars= document.getElementsByClassName("fas");
+	var emoji= document.getElementById("emoji");
+	
+		stars[0].onclick = function(){
+			stars[0].style.color = "#ffd93b";
+			stars[1].style.color = "#e4e4e4";
+			stars[2].style.color = "#e4e4e4";
+			stars[3].style.color = "#e4e4e4";
+			stars[4].style.color = "#e4e4e4";
+			emoji.style.transform = "translateX(0)";
+		}
+		stars[1].onclick = function(){
+			stars[0].style.color = "#ffd93b";
+			stars[1].style.color = "#ffd93b";
+			stars[2].style.color = "#e4e4e4";
+			stars[3].style.color = "#e4e4e4";
+			stars[4].style.color = "#e4e4e4";
+			emoji.style.transform = "translateX(-100px)";
+		}
+		stars[2].onclick = function(){
+			stars[0].style.color = "#ffd93b";
+			stars[1].style.color = "#ffd93b";
+			stars[2].style.color = "#ffd93b";
+			stars[3].style.color = "#e4e4e4";
+			stars[4].style.color = "#e4e4e4";
+			emoji.style.transform = "translateX(-200px)";
+		}
+		stars[3].onclick = function(){
+			stars[0].style.color = "#ffd93b";
+			stars[1].style.color = "#ffd93b";
+			stars[2].style.color = "#ffd93b";
+			stars[3].style.color = "#ffd93b";
+			stars[4].style.color = "#e4e4e4";
+			emoji.style.transform = "translateX(-300px)";
+		}
+		stars[4].onclick = function(){
+			stars[0].style.color = "#ffd93b";
+			stars[1].style.color = "#ffd93b";
+			stars[2].style.color = "#ffd93b";
+			stars[3].style.color = "#ffd93b";
+			stars[4].style.color = "#ffd93b";
+			emoji.style.transform = "translateX(-400px)";
+		}
+</script>
+</body>
+
+</html>
